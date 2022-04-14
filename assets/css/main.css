@@ -1,0 +1,285 @@
+/********** BOUTONS DE VALIDATION ************/
+
+.buttonValidate {
+    background: #0066A2;
+    color: white;
+    border-style: outset;
+    border-color: #0066A2;
+    height: 50px;
+    width: 15vw;
+    border-radius: 20px;
+    font: bold 15px arial, sans-serif;
+    text-shadow:none;
+}
+
+.buttonValidate:hover {
+    background: #016ABC;
+    color: #fff;
+    border: 1px solid #eee;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px #000;
+    text-shadow:none;
+    cursor: pointer;
+}
+.buttonValidate:active {
+    transform: translate(0px,5px);
+    -webkit-transform: translate(0px,5px);
+    border-bottom: 1px solid;
+}
+
+/*********** PROGRESS BAR *********/
+
+progress {
+    height: 15px;
+    border-radius: 50px;
+    width: 40%;
+    float: right;
+}
+
+progress::-moz-progress-bar {
+    background: green;
+}
+progress::-webkit-progress-value {
+    background: green;
+}
+
+.header {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    height: 70px;
+    line-height: 70px;
+    background-color: #FFFFFF;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+}
+
+/************ NAVBAR **************/
+
+.header .header-logo {
+    color: #000000;
+    font-family: 'Montserrat', sans-serif;
+    float: left;
+    margin-left: 30px;
+}
+
+.header .header-menu {
+    margin-right: 30px;
+}
+
+.header .header-menu a {
+    margin-right: 15px;
+    color: #000000;
+}
+
+.header .header-menu a:hover {
+    color: #3498db;
+}
+
+/********* MENU ACCORDEON **********/
+
+
+.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+}
+
+.active, .accordion:hover {
+    background-color: #ccc;
+}
+
+.panel {
+    padding: 0 18px;
+    background-color: white;
+    display: none;
+    overflow: hidden;
+}
+
+.panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+
+
+
+/* PAGE DE CONNEXION */
+
+.htmlConnexion {
+    background: url('../img/backgroundConnexion.jpg') no-repeat center center fixed;
+    background-size: cover;
+    height: 100%;
+    overflow: hidden;
+}
+
+.formConnexion {
+    background: url('../img/panel-dofus1.PNG') no-repeat center center;
+    width: 100%;
+    height: 90vh;
+    position: fixed;
+}
+
+.divFormConnexion {
+    height: 28vh;
+    width: 25vw;
+    margin-top: 36vh;
+}
+
+.labelConnexion {
+    color:#5AA62C;
+    display: block;
+    font-weight: bold;
+    margin-bottom: 1vh;
+}
+
+input[type=text], input[type=password] {
+    text-align: center;
+    background: url('../img/panel-dofus3.PNG') no-repeat center center;
+    width: 16vw;
+    height: 4vh;
+    color: white;
+    border: none;
+    margin-bottom: 1vh;
+}
+
+.divFormConnexion .control .passwordConnexion {
+    margin-bottom: 2vh;
+}
+
+.buttonConnexion {
+    background: url('../img/panel-dofus2.PNG') no-repeat center center;
+    width: 25vw;
+    height: 10vh;
+    border: none;
+    margin-bottom: 1vh;
+}
+.buttonConnexion:hover {
+    opacity : 0.7;
+}
+
+.buttonConnexion:active {
+    transform: translate(0px,5px);
+    -webkit-transform: translate(0px,5px);
+    border-bottom: 1px solid;
+}
+
+.createAccountConnexion {
+    text-decoration: none;
+    color:#5AA62C;
+    display: block;
+    font-weight: bold;
+    margin-bottom: 1vh;
+}
+
+/*
+
+MEDIA QUERIES
+
+
+@media only screen and (max-width : 379px){
+    mini Smartphone
+}
+@media only screen and (max-width : 540px) and (min-width : 380px){
+    Smartphone
+}
+*/
+
+/********** PAGE DE CREATION DE COMPTE ************/
+
+.buttonCreateAccount {
+    background: url('../img/panel-dofus4.PNG') no-repeat center center;
+    width: 25vw;
+    height: 10vh;
+    border: none;
+    margin-bottom: 1vh;
+}
+
+.buttonCreateAccount:hover {
+    opacity : 0.7;
+}
+
+.buttonCreateAccount:active {
+    transform: translate(0px,5px);
+    -webkit-transform: translate(0px,5px);
+    border-bottom: 1px solid;
+}
+
+.createAccountConnexion {
+    text-decoration: none;
+    color:#5AA62C;
+    display: block;
+    font-weight: bold;
+    margin-bottom: 1vh;
+}
+
+/**********   CHECKBOX     ***********/
+.container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+}
+
+.container:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+
+.container input:checked ~ .checkmark {
+    background-color: #2196F3;
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.container input:checked ~ .checkmark:after {
+    display: block;
+}
+
+.container .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
